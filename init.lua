@@ -1,5 +1,9 @@
 if vim.g.vscode then
-  -- nothing
+  -- Sync clipboard between OS and Neovim.
+  vim.opt.clipboard = 'unnamedplus'
+  -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
+  vim.opt.ignorecase = true
+  vim.opt.smartcase = true
 else
   --[[
 
